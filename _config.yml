@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
+title: 标题
+subtitle: 副标题
+description: 描述
+keywords: 关键词
+author: 作者
+language: zh-Hans #中文简体
 timezone:
 
 # URL
@@ -73,9 +73,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next #配置主题，这里使用next主题
+stylus:
+   compress: true #自适应布局
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/WangJieWJ/wangjiewj.github.io.git
+  branch: master
